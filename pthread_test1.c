@@ -3,7 +3,6 @@
  * Title: Creating/terminating threads(1)
  * Desc: 쓰레드 생성 제거 예제
  * Revision History
- * 
  ***************************************/
 #include <stdio.h>
 #include <pthread.h>
@@ -15,7 +14,7 @@ void* Thread( void *arg )
 {
     int i;
     for ( i=0; i<30; i++ )
-        printf( "thread %d: %dth iteration\n", *(int*)arg, i );
+        printf( "my thread %d: %dth iteration\n", *(int*)arg, i );
     pthread_exit(0);  /* 쓰레드 종료 함수 */
 }
 //-------------------------------------------------------------
