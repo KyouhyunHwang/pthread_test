@@ -3,7 +3,6 @@
  * Title: Creating/terminating threads(1)
  * Desc: 쓰레드 생성 제거 예제
  * Revision History
- * 
  ***************************************/
 #include <stdio.h>
 #include <pthread.h>
@@ -32,6 +31,8 @@ int main( void )
                         &thread_args[i] );          /* 생성된 쓰레드에 전달 인자 */
     
     pthread_exit(0); /*메인 쓰레드 종료 */
+
+    return 0;
 }
 
 /****************************************
